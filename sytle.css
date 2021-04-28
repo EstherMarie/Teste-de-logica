@@ -48,7 +48,7 @@ h1 {
 	grid-template-areas: 'e e e e e' 'o o i i i' 'o o i i i';
 	grid-template-rows: 20% 40% 40%;
 	grid-template-columns: 20% 20% auto;
-    grid-gap: 3%;
+	grid-gap: 3%;
 }
 
 .enunciado {
@@ -88,8 +88,8 @@ h1 {
 }
 
 @media (max-width: 600px) {
-    .conteudo {
-        grid-template-areas: "e e e" "i i i" "o o o";
-        margin: 5vh 2%;
-    }
+	.conteudo {
+		grid-template-areas: 'e e e' 'i i i' 'o o o';
+		margin: 5vh 2%;
+	}
 }

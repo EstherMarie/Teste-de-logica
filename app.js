@@ -6,11 +6,14 @@ let hour = date.getHours();
 
 if (hour >= 18 || hour <= 05) {
 	html.style.cssText = 'background-color: #202124; color: #e8e8e9';
-	document.querySelectorAll('.opcao').forEach(op => {
-        op.style.cssText = 'border: 1px solid rgb(232, 232, 233, 0.8); color: #e8e8e9;';
-    })
-	document.querySelector('.teste').style.cssText = 'border: 1px solid rgb(232, 232, 233, 0.8);';
-	document.querySelector('h1').style.cssText = 'border-left: 5px solid rgb(232, 232, 233, 0.8);';
+	document.querySelectorAll('.opcao').forEach((op) => {
+		op.style.cssText =
+			'border: 1px solid rgb(232, 232, 233, 0.8); color: #e8e8e9;';
+	});
+	document.querySelector('.teste').style.cssText =
+		'border: 1px solid rgb(232, 232, 233, 0.8);';
+	document.querySelector('h1').style.cssText =
+		'border-left: 5px solid rgb(232, 232, 233, 0.8);';
 }
 
 // array com as questões
@@ -66,7 +69,7 @@ const questoes = [
 	},
 	{
 		numero: 5,
-		enunciado: 'Complete a sequência: X23 W22 X21 ...',
+		enunciado: 'Complete a sequência: X23 W22 V21 ...',
 		opcoes: {
 			a: 'W12',
 			b: 'U20',
@@ -91,7 +94,9 @@ function novaQuestao() {
 		document.querySelector('h1').textContent = 'Resultado';
 		document.querySelector('.conteudo').style.cssText =
 			'display: flex; justify-content: center; align-items: center; font-size: 1.5em';
-		document.querySelector('.conteudo').textContent = `Você acertou ${acertos} de ${questoes.length} questões.`;
+		document.querySelector(
+			'.conteudo'
+		).textContent = `Você acertou ${acertos} de ${questoes.length} questões.`;
 	} else {
 		questao.textContent = questoes[q].numero;
 		enunciado.textContent = questoes[q].enunciado;
@@ -121,4 +126,3 @@ opcoes.forEach((opcao) => {
 		novaQuestao();
 	});
 });
-
