@@ -9,7 +9,7 @@ if (hour >= 18 || hour <= 05) {
 	document.querySelectorAll('.opcao').forEach(op => {
         op.style.cssText = 'border: 1px solid rgb(232, 232, 233, 0.8); color: #e8e8e9;';
     })
-	document.querySelector('.questionario').style.cssText = 'border: 1px solid rgb(232, 232, 233, 0.8);';
+	document.querySelector('.teste').style.cssText = 'border: 1px solid rgb(232, 232, 233, 0.8);';
 	document.querySelector('h1').style.cssText = 'border-left: 5px solid rgb(232, 232, 233, 0.8);';
 }
 
